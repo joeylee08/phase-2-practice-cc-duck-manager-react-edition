@@ -1,6 +1,6 @@
-function DuckListCard(props) {
+function DuckListCard({name, img_url, handleSetFeaturedDuck, duck}) {
   return (
-    <img src={"#"} alt={"duck name goes here"} />
+    <img src={img_url} alt={name} onClick={() => handleSetFeaturedDuck(duck)} />
   )
 }
 

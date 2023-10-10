@@ -1,8 +1,8 @@
 import React from 'react'
 
-function DuckForm(props) {
+function DuckForm({duckFormOpen}) {
   return (
-    <form id="new-duck-form">
+    <form id="new-duck-form" className={duckFormOpen ? null : "hidden"}>
        <label htmlFor="duck-name-input">New Duck Name:</label>
        <input type="text" name="duck-name-input" />
 

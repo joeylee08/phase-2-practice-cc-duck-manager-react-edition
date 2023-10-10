@@ -1,17 +1,11 @@
 import React from 'react'
 
-function DuckDisplay(props) {
+function DuckDisplay({id, name, img_url, likes, handleLikes}) {
   return (
     <div className="duck-display">
-
-      {/* show all the details for the featuredDuck state here */}
-
-      <h2>{"Duck Name Goes Here"}</h2>
-
-      <img src={"#"} alt={"duck name goes here"} />
-
-      <button>0 likes</button>
-
+      <h2>{name}</h2>
+      <img src={img_url} alt={name} />
+      <button onClick={() => handleLikes(id, likes)}>{likes} likes</button>
     </div>
   )
 }
